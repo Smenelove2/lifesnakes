@@ -86,7 +86,7 @@ int main() {
 
         } else if (escolha == 2) {
             screenClear();
-            ver();
+            leaderboard();
             printf("\nPressione qualquer tecla para voltar ao menu principal...");
             getchar();
             getchar();
