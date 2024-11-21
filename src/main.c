@@ -229,18 +229,6 @@ void moveSnake() {
             foodX = rand() % (MAXX - 3) + 1;
             foodY = rand() % (MAXY - 3) + 1;
         }
-
-        if (snakeDirection == 0 || snakeDirection == 2) {
-            snakeDirection = (snakeDirection + 2) % 4;
-
-        } else if (snakeDirection == 1 || snakeDirection == 3) {
-            snakeDirection = (snakeDirection - 2) % 4;
-
-            if (snakeDirection < 0) {
-                snakeDirection += 4;
-            }
-
-        }
         snakeLength++;
 
     } else {
